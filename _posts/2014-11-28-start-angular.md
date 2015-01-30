@@ -43,4 +43,4 @@ Here, the first argument to ‘module’ is ‘sampleApp’, which is what we wi
  </div>
 ```
 
-And that’s it! Your webpage should display the words “Hello World!” in nice large letters (thanks to the ‘<h1>’ header tag). You are ready for your Angular app to blossom into something remarkable. The documentation is good, so with this jumping-off point and a bit of experimentation, you’ll be amazed at the functionality you can accomplish in relatively few lines of code.
+And that’s it! Your webpage should display the words “Hello World!” in nice large letters (thanks to the `<h1>` header tag). You are ready for your Angular app to blossom into something remarkable. The documentation is good, so with this jumping-off point and a bit of experimentation, you’ll be amazed at the functionality you can accomplish in relatively few lines of code.
