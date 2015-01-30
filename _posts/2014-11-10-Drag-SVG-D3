@@ -1,0 +1,54 @@
+---
+layout: post
+title: Create a draggable SVG image using Javascript’s D3
+date: November 10, 2014
+---
+
+I was introduced to Javascript’s D3 library last week during a 2-day coding “sprint” at Hack Reactor. Learning to use D3 to interact with SVG elements was a difficult process that included quite a bit of trial and error, along with a great amount of research. I am hoping to add to the resources available to my fellow D3 scripters with this post.
+
+We will not assume any added elements to the HTML file aside from sourcing the d3.js library. We will, however, assume that the desired image is added to the project’s folder under the name “myimage.png”.
+
+Our first step will be to add the SVG element that we will eventually be putting our image into. In this example, the element has the dimension 500×300:
+
+```
+d3.select('body').append('svg')
+  .attr("width", 500)
+  .attr("height", 300)
+```
+
+Next, we will add our image to the SVG element; in this example, the image will be sized at 50x50px and positioned at (150, 100). The “xlink:href” tells us where we are pulling the image from:
+
+```
+d3.select('body').select('svg').append("image")
+  .attr("x", 150)
+  .attr("y", 100)
+  .attr("height", "50px")
+  .attr("width", "50px")
+  .attr("xlink:href", "myimage.png")
+```
+
+In order to add the dragging functionality, we need to include a function that is called when the mouse is currently dragging our image. This function sets the midpoint of our image (calculated using one-half of the image’s width and height) to the location of our mouse pointer:
+
+```
+function mover () {
+  d3.select('image')
+    .attr("x", d3.event.x - parseInt(d3.select('image').attr("width")) / 2)
+    .attr("y", d3.event.y - parseInt(d3.select('image').attr("height")) / 2);
+}
+```
+
+Fortunately, the D3 library has a built-in function that can be called when the mouse is dragging an element. This function will call our mover function when the image is dragged:
+
+```
+var drag = d3.behavior.drag()
+    .on("drag", mover);
+```
+
+Finally, we add a call to our drag function to the image element:
+
+```
+d3.select('body').select('svg').select("image")
+  .call(drag);
+```
+
+Note that if we had defined our drag variable first, we could have added the call to drag in our second piece of code where we first added the image. However, I believe the presented order is more intuitive and reads a little easier.
