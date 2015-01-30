@@ -7,11 +7,11 @@ Welcome to my first blog post! As of right now, I am in my first week of an acce
 
 Chatbuilder can best be described as a simplified version of a twitter feed, whose implementation requires some knowledge of DevTools, JavaScript, jQuery, and HTML. I was new to most of these concepts coming in to the project, but by the time I was finished, I felt much more comfortable with all of them thanks to this valuable exposure. To illustrate this effect, I’ll provide an example of a very short function from my project:
 
-'''
+```
 function addMsg (msg) {
   $(".messages").append("<li>" + msg + "</li>");
 }
-'''
+```
 
 In order to reach a point where I had the ability to write such a function, I first had to gain some level of understanding of jQuery (represented by the “$” symbol) and its interaction with HTML DOM elements (referenced with “.messages” and “li”). The function itself is in JavaScript, which I had some experience with from various lessons and coding challenges. This particular function is meant to be called whenever a message should be displayed (either through timed computer-generation or user input). The function takes a string as input and adds it to the DOM as an “li” element, which is then displayed as a line on the page.
 
