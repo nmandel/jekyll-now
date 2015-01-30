@@ -38,9 +38,11 @@ angular.module('sampleApp', [])
 Here, the first argument to ‘module’ is ‘sampleApp’, which is what we will call our app. The second argument is an array of models that this model is dependent on; in this case, there are none as of yet. We create our controller, dubbed ‘sampleController’, as a method of the ‘sampleApp’ module. Each controller in Angular comes with its own scope, which is delineated by the $scope keyword. When we set $scope.words, we can reference ‘words’ by itself as long as we are within the scope in question. The syntax we use for this is a double curly-brace, so that we can add the following to the HTML:
 
 ```
+{% raw %}
 <div ng-controller='sampleController'>
    <h1>{{words}}</h1>
  </div>
+ {% endraw %}
 ```
 
 And that’s it! Your webpage should display the words “Hello World!” in nice large letters (thanks to the `<h1>` header tag). You are ready for your Angular app to blossom into something remarkable. The documentation is good, so with this jumping-off point and a bit of experimentation, you’ll be amazed at the functionality you can accomplish in relatively few lines of code.
