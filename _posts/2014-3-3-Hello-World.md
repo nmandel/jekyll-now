@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Chatbuilder
+date: November 3, 2014
 ---
 
 Welcome to my first blog post! As of right now, I am in my first week of an accelerated programming school (coding bootcamp) known as Hack Reactor. There are many things that I have learned and experienced this past week that I could speak to, but I thought instead I would look back to a Hack Reactor project I completed before I was even accepted into the program. After venturing a few steps in to the Hack Reactor application, I was greeted with a difficult project whose completion was not required, but recommended before entry into the program. I would encourage anyone who is thinking of applying to the program (or anyone simply looking for a coding challenge) to complete Chatbuilder as both a learning experience and indicator of future success.
