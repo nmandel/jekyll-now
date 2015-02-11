@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a software developer whose latest project, [Icecomm.io](http://icecomm.io) - a developer platform for WebRTC - reached #2 on Hacker News, as well as the front page of Product Hunt and /r/programming. I build coding projects (both on teams and as a solo developer) primarily using Javascript and its many related technologies. 
 
-### More Information
+I'm currently seeking a full-stack developer position in the Greater Seattle area; for more information, check out [my LinkedIn profile](https://www.linkedin.com/in/nrmandel).
 
-A place to include any other types of information that you'd like to include about yourself. 
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
